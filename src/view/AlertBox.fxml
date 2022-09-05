@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="417.0" style="-fx-background-color: A2C6AC;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlertBoxView">
+   <children>
+      <Rectangle fill="#a2c6ac" height="177.6" layoutX="12.0" layoutY="7.0" stroke="#2e979b" strokeType="INSIDE" strokeWidth="5.0" width="392.5" />
+      <Label fx:id="header" layoutX="38.0" layoutY="36.0" prefHeight="40.0" prefWidth="340.0">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" layoutX="38.0" layoutY="76.0" prefHeight="28.0" prefWidth="340.0" textFill="#666666">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="142.0" layoutY="125.0" onAction="#cancelAlert" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #714e42; -fx-background-radius: 6;" text="_No" textFill="#a2c6ac">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnOK" layoutX="271.0" layoutY="125.0" onAction="#OKAlert" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #a2c6ac; -fx-border-width: 5; -fx-border-radius: 6; -fx-border-color: #714e42;" text="_Yes" textFill="#714e42">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

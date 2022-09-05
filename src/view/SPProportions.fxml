@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+
+
+<PieChart prefHeight="415.0" prefWidth="840.0" style="-fx-background-color: #cccccc; -fx-background-radius: 6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" />

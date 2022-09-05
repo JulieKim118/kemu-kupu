@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GamesModuleController">
+   <children>
+      <AnchorPane>
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" style="-fx-background-color: A2C6AC;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a2c6ac" height="660.0" layoutX="5.0" layoutY="5.0" stroke="#2e979b" strokeType="INSIDE" strokeWidth="5.0" width="900.0" x="25.0" y="25.0" />
+                  <Button fx:id="btnRepeat" focusTraversable="false" layoutX="437.0" layoutY="137.0" mnemonicParsing="false" onAction="#repeatButton" prefHeight="75.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/Replay_ver2.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Group layoutX="693.0" layoutY="48.0">
+                     <children>
+                        <Text fx:id="scoreTitle" fill="#666666" layoutX="-3.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="32.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="scoreLabel" layoutX="110.0" prefHeight="75.0" prefWidth="136.0" text="0" textFill="#2e979b">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Button fx:id="btnBack" focusTraversable="false" layoutX="49.0" layoutY="48.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="75.0" prefWidth="72.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/Back_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnIDontKnow" focusTraversable="false" layoutX="227.0" layoutY="543.0" onAction="#skipButton" prefHeight="66.0" prefWidth="240.0" style="-fx-background-color: a2c6ac; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="I _Don't Know" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSubmit" focusTraversable="false" layoutX="498.0" layoutY="543.0" onAction="#submitButton" prefHeight="65.0" prefWidth="240.0" style="-fx-background-color: #714e42; -fx-background-radius: 6;" text="_Submit" textFill="#a2c6ac">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="26.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnA" focusTraversable="false" layoutX="326.0" layoutY="477.0" mnemonicParsing="false" onAction="#pressMacronButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="ā" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnE" focusTraversable="false" layoutX="389.0" layoutY="477.0" mnemonicParsing="false" onAction="#pressMacronButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="ē" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnI" focusTraversable="false" layoutX="454.0" layoutY="477.0" mnemonicParsing="false" onAction="#pressMacronButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="ī" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnO" focusTraversable="false" layoutX="519.0" layoutY="477.0" mnemonicParsing="false" onAction="#pressMacronButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="ō" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnU" focusTraversable="false" layoutX="584.0" layoutY="477.0" mnemonicParsing="false" onAction="#pressMacronButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-color: #714e42; -fx-border-width: 5; -fx-border-radius: 6;" text="ū" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="wordTextField" alignment="CENTER" layoutX="270.0" layoutY="371.0" onKeyPressed="#onKeyPressed" prefHeight="43.0" prefWidth="420.0" promptText="type here" style="-fx-text-fill: black; -fx-background-color: white; -fx-background-radius: 6;">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="26.0" />
+                     </font>
+                  </TextField>
+                  <ProgressBar fx:id="bonusBar" layoutX="-30.0" layoutY="352.0" prefHeight="37.0" prefWidth="285.0" progress="1.0" rotate="-90.0" style="-fx-accent: #37A872; -fx-background-radius: 6;" />
+                  <Group layoutX="577.0" layoutY="596.0">
+                     <children>
+                        <Slider fx:id="speedOfSpeech" blockIncrement="0.5" focusTraversable="false" layoutX="146.0" layoutY="45.0" majorTickUnit="0.5" max="1.5" min="0.5" minorTickCount="0" onMouseDragged="#updateSpeedLabel" onMouseReleased="#adjustSpeed" prefHeight="33.0" prefWidth="191.0" rotate="180.0" showTickMarks="true" snapToTicks="true" value="1.0">
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor>
+                        </Slider>
+                        <Label fx:id="speedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="36.0" prefHeight="18.0" prefWidth="131.0" text="Speed: Normal" textFill="#666666">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Label fx:id="hintLabel" alignment="CENTER" layoutX="164.0" layoutY="426.0" prefHeight="28.0" prefWidth="634.0" textAlignment="CENTER" textFill="#2e979b">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="statusLabel" alignment="CENTER" layoutX="229.0" layoutY="205.0" prefHeight="75.0" prefWidth="500.0" style="-fx-text-fill: #714e42;" text="SPELL IT:" textFill="#714e42">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="questionNumLabel" layoutX="141.0" layoutY="67.0" prefHeight="36.0" prefWidth="131.0" style="-fx-text-fill: #666666;">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bonusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="196.0" prefHeight="26.0" prefWidth="150.0" textAlignment="CENTER" textFill="#666666">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="helpButton" focusTraversable="false" layoutX="44.0" layoutY="609.0" mnemonicParsing="false" onAction="#openHelpWindow" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/resources/Help_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

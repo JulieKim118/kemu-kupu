@@ -1,0 +1,16 @@
+.chart-series-line {
+	-fx-stroke-width: 2px;
+	-fx-effect: null;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #37a872; }
+.default-color1.chart-series-line { -fx-stroke: #d79a2b; }
+.default-color2.chart-series-line { -fx-stroke: #c05353; }
+
+.default-color0.chart-line-symbol { -fx-background-color: #37a872, white; }
+.default-color1.chart-line-symbol { -fx-background-color: #d79a2b, white; }
+.default-color2.chart-line-symbol { -fx-background-color: #c05353, white; }
+
+.default-color0.chart-pie { -fx-pie-color: #37a872; }
+.default-color1.chart-pie { -fx-pie-color: #d79a2b; }
+.default-color2.chart-pie { -fx-pie-color: #c05353; }
