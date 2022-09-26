@@ -3,7 +3,7 @@
 ## Acknowledgements
 Firstly thank you to all the dedication and efforts of lecturers Nasser Giacaman, Catherine Watson, Valerio Terragni, and tutors running the SOFTENG 306 course at the University of Auckland in 2021.
 
-I would like to express my deepest gratitude to group members Jared Daniel Recomendable and Juwon Jung as this project would not have been able to be completed without yout passion, commitment, and strong dedication. Looking at the same goal, you committed to our daily meetings, catch-up sessions and all-night trio-programming sessions to complete our project to the best quality. The diligence that we had exhibited towards our common goals and aspirations for this project has paid off, earning our team First Place in our cohort of around 120 people.
+I would like to express my deepest gratitude to group members Jared Daniel Recomendable and Juwon Jung as this project would not have been able to be completed without your passion, commitment, and strong dedication. Looking at the same goal, you committed to our daily meetings, catch-up sessions and all-night trio-programming sessions to complete our project to the best quality. The diligence that we had exhibited towards our common goals and aspirations for this project has paid off, earning our team First Place in our cohort of around 120 people.
 
 ## Prize 
 This project has gained First Place in the competition within the SOFTENG 206 course in Semester 2, 2021. 
